@@ -1,9 +1,16 @@
 {% extends "_layout.html" %}
-{% block title %}
-  Homepage
-{% endblock %}
-{% block header %}
-{% endblock %}
+
+{% block title %}NEXTAGRAM{% endblock %}
+
 {% block content %}
-<h1>Homepage</h1>
+<!-- {{ current_user.username }} -->
+<div class="home" style="background-image: url(http://4.bp.blogspot.com/-lW88y2ENLEQ/UbAN49rP1FI/AAAAAAAAAvA/VNMVYb5LXX8/s1600/Free+background+images.jpg); background-size: 100%">
+  <h1 class="display-4 col-md-3" style="color: white">Nextagram</h1>
+  <p class="lead col-md-3" style="color: white">Custom-made by Kindred</p>
+  <br/>
+  <p class="col-md-3" style="color: white">Don't have an account? Sign-up here!</p>
+  <div class="col-md-3">
+    <a class="btn btn-success" href="{{ url_for('users.new')}}">Sign Up</a>
+  </div>
+</div>
 {% endblock %}
